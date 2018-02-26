@@ -1,5 +1,7 @@
 ## Node.js with MongoDB Example
 
+[logo]: https://i.imgur.com/eDNZeqh.png 'Swagger Page of that application'
+
 ### Requirements
 
 * Node.js v7+
