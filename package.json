@@ -4,10 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "preinstall": "npm i -g typescript",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node lib/index.js",
-    "build": "tsc"
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "dev:watch": "nodemon lib/index.js",
+    "dev": "concurrently npm:build:watch npm:dev:watch"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +18,7 @@
     "@types/hapi": "^15.0.2",
     "@types/joi": "^13.0.5",
     "@types/mongodb": "^3.0.5",
+    "concurrently": "^4.0.1",
     "hapi": "^15.2.0",
     "hapi-swagger": "^7.10.0",
     "inert": "^4.2.1",
