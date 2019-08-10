@@ -1,29 +1,38 @@
 {
-  "name": "docker-registry",
+  "name": "nodejs-with-mongodb-api-example",
   "version": "1.0.0",
-  "description": "",
+  "description": "<img src=https://i.imgur.com/eDNZeqh.png alt='Swagger Page of that application' title='Swagger Page of that application'/>",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tsc",
+    "dev": "concurrently \"npm run build\" \"npm run dev:run\"",
+    "dev:run": "npx nodemon lib/index.js",
     "start": "node lib/index.js",
-    "build": "tsc",
-    "build:watch": "tsc --watch",
-    "dev:watch": "nodemon lib/index.js",
-    "dev": "concurrently npm:build:watch npm:dev:watch"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErickWendel/nodejs-with-mongodb-api-example.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ErickWendel/nodejs-with-mongodb-api-example/issues"
+  },
+  "homepage": "https://github.com/ErickWendel/nodejs-with-mongodb-api-example#readme",
+  "devDependencies": {
+    "nodemon": "1.19.1"
+  },
   "dependencies": {
-    "@types/hapi": "^15.0.2",
-    "@types/joi": "^13.0.5",
-    "@types/mongodb": "^3.0.5",
-    "concurrently": "^4.0.1",
-    "hapi": "^15.2.0",
-    "hapi-swagger": "^7.10.0",
-    "inert": "^4.2.1",
-    "joi": "^13.1.2",
-    "mongodb": "^3.0.3",
-    "vision": "^4.1.1"
+    "@hapi/hapi": "18.3.1",
+    "@hapi/inert": "5.2.1",
+    "@hapi/joi": "15.1.0",
+    "@hapi/vision": "5.5.2",
+    "@types/mongodb": "3.1.32",
+    "@types/node": "12.7.1",
+    "concurrently": "4.1.1",
+    "hapi-swagger": "10.0.2",
+    "mongodb": "3.3.0-beta2"
   }
 }
