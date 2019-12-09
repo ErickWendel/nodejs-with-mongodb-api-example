@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/ErickWendel/nodejs-with-mongodb-api-example#readme",
   "devDependencies": {
-    "nodemon": "1.19.1"
+    "nodemon": "1.19.1",
+    "typescript": "^3.7.3"
   },
   "dependencies": {
     "@hapi/hapi": "18.3.1",
