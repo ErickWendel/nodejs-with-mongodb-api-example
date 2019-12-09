@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npx typescript",
-    "dev": "concurrently \"npm run build\" \"npm run dev:run\"",
+    "dev": "npx concurrently \"npm run build\" \"npm run dev:run\"",
     "dev:run": "npx nodemon lib/index.js",
     "start": "node lib/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -32,7 +32,6 @@
     "@hapi/joi": "15.1.0",
     "@hapi/vision": "5.5.2",
     "@types/mongodb": "3.1.32",
-    "@types/node": "12.7.1",
     "hapi-swagger": "10.0.2",
     "mongodb": "3.3.0-beta2"
   }
