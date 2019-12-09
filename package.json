@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/ErickWendel/nodejs-with-mongodb-api-example#readme",
   "devDependencies": {
+    "concurrently": "^4.1.1",
     "nodemon": "1.19.1",
     "typescript": "^3.7.3"
   },
@@ -32,7 +33,6 @@
     "@hapi/vision": "5.5.2",
     "@types/mongodb": "3.1.32",
     "@types/node": "12.7.1",
-    "concurrently": "4.1.1",
     "hapi-swagger": "10.0.2",
     "mongodb": "3.3.0-beta2"
   }
