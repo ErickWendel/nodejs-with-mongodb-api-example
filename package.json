@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "npx typescript",
+    "build:watch": "npx typescript -w",
     "dev": "npx concurrently \"npm run build\" \"npm run dev:run\"",
+    "dev:watch": "npx concurrently \"npm run build:watch\" \"npm run dev:run\"",
     "dev:run": "npx nodemon lib/index.js",
     "start": "node lib/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"

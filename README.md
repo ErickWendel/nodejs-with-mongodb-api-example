@@ -21,4 +21,5 @@
 
 ### Development with Watch Compiler
 
-- Run project - `npm run dev`
+- Run once - `npm run dev`
+- Run and watch files - `npm run dev:watch`
